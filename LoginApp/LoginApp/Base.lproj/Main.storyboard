@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RootPage-->
+        <scene sceneID="7Ch-dm-Hr0">
+            <objects>
+                <viewController storyboardIdentifier="RootPage" title="RootPage" id="ZFA-q2-PeA" customClass="ViewController" customModule="LoginApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JVZ-dE-qkv"/>
+                        <viewControllerLayoutGuide type="bottom" id="mxb-Uy-Ivu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qcl-wI-b7S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HMLoginApp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gp2-N4-NGh">
+                                <rect key="frame" x="200" y="56" width="201" height="187"/>
+                                <accessibility key="accessibilityConfiguration" label="Logo"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="NGA-bo-GIF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="187" id="aWr-u8-IgG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="201" id="nH3-iL-ZDk"/>
+                                    <constraint firstAttribute="width" constant="201" id="sod-Cg-pFc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxx-V8-erL">
+                                <rect key="frame" x="216" y="458" width="168" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="eG8-vN-cyM"/>
+                                    <constraint firstAttribute="width" constant="168" id="ivI-fx-hyS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Register_Button.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Hello Media login App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xp9-89-aah">
+                                <rect key="frame" x="105" y="251" width="390" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PUb-fG-0m1"/>
+                                    <constraint firstAttribute="width" constant="390" id="zlk-an-pHD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.08235294118" green="0.20000000000000001" blue="0.4941176471" alpha="0.81783754769999994" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8wF-qy-aeo">
+                                <rect key="frame" x="216" y="378" width="168" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gFz-OY-oFA">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4v-VZ-XBE">
+                                                <rect key="frame" x="0.0" y="0.0" width="168" height="62"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="62" id="2c8-Cj-fMa"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="62" id="FVF-Wh-2Lc"/>
+                                                    <constraint firstAttribute="width" secondItem="f4v-VZ-XBE" secondAttribute="height" multiplier="84:31" id="GNS-NE-Ck8"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="USf-SV-f4A"/>
+                                                    <constraint firstAttribute="width" constant="168" id="X4C-0y-Q6p"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="168" id="lrw-z8-lnZ"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="168" id="w2H-BV-DH0"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="Login_Button.png"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="f4v-VZ-XBE" secondAttribute="trailing" id="0ks-R3-o2M"/>
+                                            <constraint firstItem="f4v-VZ-XBE" firstAttribute="leading" secondItem="gFz-OY-oFA" secondAttribute="leading" id="7yI-n3-E3N"/>
+                                            <constraint firstItem="f4v-VZ-XBE" firstAttribute="top" secondItem="gFz-OY-oFA" secondAttribute="top" id="IZt-Dw-Gy9"/>
+                                            <constraint firstAttribute="bottom" secondItem="f4v-VZ-XBE" secondAttribute="bottom" id="R9H-n2-E2e"/>
+                                            <constraint firstItem="f4v-VZ-XBE" firstAttribute="leading" secondItem="gFz-OY-oFA" secondAttribute="leading" id="T6d-uC-ZQR"/>
+                                            <constraint firstAttribute="bottom" secondItem="f4v-VZ-XBE" secondAttribute="bottom" id="fFM-6n-qs3"/>
+                                            <constraint firstAttribute="trailing" secondItem="f4v-VZ-XBE" secondAttribute="trailing" id="vej-CD-ngU"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.16078431372549021" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xp9-89-aah" secondAttribute="trailing" constant="85" id="649-Ui-jsh"/>
+                            <constraint firstItem="Xp9-89-aah" firstAttribute="centerX" secondItem="Qcl-wI-b7S" secondAttribute="centerX" id="CYJ-ed-P6J"/>
+                            <constraint firstItem="Hxx-V8-erL" firstAttribute="leading" secondItem="Qcl-wI-b7S" secondAttribute="leadingMargin" constant="196" id="GWW-Pj-Ypy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hxx-V8-erL" secondAttribute="trailing" constant="196" id="Tgw-7M-gnD"/>
+                            <constraint firstItem="Xp9-89-aah" firstAttribute="centerY" secondItem="Qcl-wI-b7S" secondAttribute="centerY" id="WjE-fh-UPb"/>
+                            <constraint firstItem="Gp2-N4-NGh" firstAttribute="top" secondItem="JVZ-dE-qkv" secondAttribute="bottom" constant="36" id="cBs-Lb-uMk"/>
+                            <constraint firstItem="Xp9-89-aah" firstAttribute="leading" secondItem="Qcl-wI-b7S" secondAttribute="leadingMargin" constant="85" id="hYz-rt-vny"/>
+                            <constraint firstItem="Gp2-N4-NGh" firstAttribute="leading" secondItem="Qcl-wI-b7S" secondAttribute="leadingMargin" constant="180" id="kXd-WY-EXb"/>
+                            <constraint firstItem="mxb-Uy-Ivu" firstAttribute="top" secondItem="Hxx-V8-erL" secondAttribute="bottom" constant="80" id="pM0-Gf-mOA"/>
+                            <constraint firstItem="Xp9-89-aah" firstAttribute="top" secondItem="Gp2-N4-NGh" secondAttribute="bottom" constant="8" id="w1B-YJ-VNJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gp2-N4-NGh" secondAttribute="trailing" constant="179" id="wai-1e-0az"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gfr-hV-MMT"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRg-ah-dCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="-2058"/>
+        </scene>
+        <!--LoginPage-->
+        <scene sceneID="s6S-oY-Tlw">
+            <objects>
+                <viewController storyboardIdentifier="LoginPage" title="LoginPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="idW-pa-Iyz" customClass="ViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cxk-vl-yhC"/>
+                        <viewControllerLayoutGuide type="bottom" id="6IX-az-Lo2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BAQ-Mx-wpS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HMLoginApp.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Nv-xt-GHM">
+                                <rect key="frame" x="196" y="67" width="201" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Logo"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdg-zI-GFn">
+                                <rect key="frame" x="196" y="289" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q24-DO-UVQ">
+                                <rect key="frame" x="173" y="350" width="168" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Login_Button.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJb-WD-HHg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2218" y="-1865"/>
+        </scene>
+        <!--RegPage-->
+        <scene sceneID="zKc-mi-9TQ">
+            <objects>
+                <viewController storyboardIdentifier="RegPage" title="RegPage" id="cLB-kc-HmR" customClass="ViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m64-NZ-zkL"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Xe-mc-oXh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o6q-PC-lcl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HMLoginApp.png" translatesAutoresizingMaskIntoConstraints="NO" id="NGv-MJ-BYz">
+                                <rect key="frame" x="210" y="68" width="201" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Logo"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtn-4P-sDj">
+                                <rect key="frame" x="273" y="346" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLT-f5-mqF">
+                                <rect key="frame" x="228" y="271" width="168" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Register_Button.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uht-6X-c8I" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="-825"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gEV-l5-g8j">
+            <objects>
+                <viewController id="JH0-or-gQo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L9b-jv-H9V"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ZS-R3-zhB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iZR-cO-fjA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launcImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="0aO-K0-8EG">
+                                <rect key="frame" x="16" y="111" width="343" height="333"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0aO-K0-8EG" firstAttribute="trailing" secondItem="iZR-cO-fjA" secondAttribute="trailingMargin" id="OYw-e4-3Y4"/>
+                            <constraint firstItem="0aO-K0-8EG" firstAttribute="leading" secondItem="iZR-cO-fjA" secondAttribute="leadingMargin" id="Uop-Zp-cq4"/>
+                            <constraint firstItem="0aO-K0-8EG" firstAttribute="top" secondItem="L9b-jv-H9V" secondAttribute="bottom" constant="91" id="bqp-Xw-GIr"/>
+                            <constraint firstItem="9ZS-R3-zhB" firstAttribute="top" secondItem="0aO-K0-8EG" secondAttribute="bottom" constant="223" id="fmW-f6-s1D"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nE9-j0-40F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="-1473.0134932533733"/>
+        </scene>
+        <!--NavController-->
+        <scene sceneID="ozv-ur-H6i">
+            <objects>
+                <navigationController storyboardIdentifier="NavPage" title="NavController" automaticallyAdjustsScrollViewInsets="NO" id="tBY-U1-5H4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cR1-jw-zEs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.086274509803921567" green="0.2196078431372549" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8O-NP-qaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="-1503"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HMLoginApp.png" width="1024" height="1009"/>
+        <image name="Login_Button.png" width="600" height="234"/>
+        <image name="Register_Button.png" width="600" height="234"/>
+        <image name="launcImage.png" width="1024" height="1009"/>
+    </resources>
+</document>
